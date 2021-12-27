@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+:root {
+  --green: #27ae60;
+  --black: #2c2c54;
+}
+* {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  list-style-type: none;
+}
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+nav {
+  position: fixed;
+  padding: 10px;
+  background-image: linear-gradient(to right, rgb(131, 131, 131), rgb(0, 0, 0));
+  background-position: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease;
+  width: 100%;
+  z-index: -2;
+}
+
+nav::before {
+  content: '';
+  position: absolute;
+  box-shadow: 1px 5px 5px 1px black;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  transition: ease;
+  width: 90%;
+}
+
+.logo a {
+  color: rgb(10, 10, 10);
+  margin-left: 30px;
+}
+nav ul {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  margin: 0 8px;
+}
+
+nav ul li a:hover {
+  text-shadow: 0 0 17px #fff, 0 0 10px #fff, 0 0 21px #fff,
+    0 0 142px rgb(255, 230, 0), 0 0 82px rgb(255, 208, 0);
+}
+
+.neon-text {
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 17px #fff, 0 0 10px #fff, 0 0 21px #fff,
+    0 0 12px rgb(255, 255, 255), 0 0 2px #fff;
+}
+
+/* header */
+
+#header {
+  background-image: url('https://images.giant-bicycles.com/puulnznffdzu61pazp3h/preview.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  top: 11px;
+  left: 0;
+  right: 0;
+  height: 90vh;
+  width: 100%;
+  z-index: -3;
+  position: fixed;
+  box-shadow: 1px 10px 10px 1px white;
+  animation: slider 22s infinite ease;
+}
+
+@keyframes slider {
+  0% {
+    background-image: url('https://images.giant-bicycles.com/puulnznffdzu61pazp3h/preview.jpg');
+  }
+  44% {
+    background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg');
+  }
+  66% {
+    background-image: url('https://static.remove.bg/remove-bg-web/d5091d1b7f1d072d8add9f16dca7347a1e72d77c/assets/start-1abfb4fe2980eabfbbaaa4365a0692539f7cd2725f324f904565a9a744f8e214.jpg');
+  }
+}
+
+.text-main {
+  color: #fff;
+  position: absolute;
+  top: 26%;
+  left: 10%;
+}
+.description-main {
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  top: 35%;
+  left: 4%;
+}
+.now-buy {
+  position: absolute;
+  top: 50%;
+  left: 13%;
+  cursor: pointer;
+  padding: 7px 12px;
+
+  border-radius: 25px;
+  background-color: #fff;
+  color: orange;
+}
+.now-buy:hover {
+  background-color: rgb(250, 29, 29);
+  color: orange;
+}
+
+.now-buy:active {
+  background-color: rgb(240, 245, 239);
+  color: orange;
+}

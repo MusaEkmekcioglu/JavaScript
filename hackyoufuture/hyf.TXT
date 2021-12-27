@@ -1,0 +1,258 @@
+So far I've learned that we create as 
+many boxes as we want for html and there are nested boxes.
+We call each of these boxes an "element"
+   and
+We also shape these boxes with css. 
+We change their position, 
+adjust their color and even add animation.
+
+
+
+
+what is html ?
+
+html stands for hyper text markup language,
+ it is a language of the world wide web.
+ it is a standard text formatting language
+ which is used to create and display pages on the web.
+html makes the text more interractive
+
+
+Are the HTML tags and elements the same thing?
+
+
+No. HTML elements are defined by a starting tag, 
+may contain some content and a closing tag.
+For example, <h1>Heading 1</h1> is a HTML element but just <h1> 
+is a starting tag and </h1> is a closing tag.
+
+
+
+This field I am showing is an html element
+bildiğim kadarıyla= as far as i know 
+
+
+what is css?
+
+CSS stands for Cascading Style Sheet.
+ It’s a style sheet language that determines how the elements
+
+CSS enables the separation of the content from the presentation.
+ This separation provides a lot of flexibility and control over
+ how the website has to look like.
+ This is the main advantage of using CSS.
+
+
+
+How to include CSS in the webpage?
+
+
+ External Style Sheet: An external file linked to your HTML document: 
+Using link tag, we can link the style sheet to the HTML page.
+
+<link rel="stylesheet" type="text/css" href="mystyles.css" />
+2 - Embed CSS with a style tag: A set of CSS styles included 
+within your HTML page.
+
+<style type="text/css">
+
+/*Add style rules here*/
+
+</style>
+Add your CSS rules between the opening and closing style tags
+ and write your CSS exactly the same way as you do in stand-alone
+ stylesheet files.
+
+3 - Add inline styles to HTML elements
+(CSS rules applied directly within an HTML tag.): 
+Style can be added directly to the HTML element using a style tag.
+
+<h2 style="color:red;background:black">Inline Style</h2>
+4 - Import a stylesheet file (An external file imported into 
+another CSS file): Another way to add CSS is by using the @import rule.
+ This is to add a new CSS file within CSS itself.
+
+
+
+ What is the difference between inline, inline-block, and block?
+
+
+
+Block Element: The block elements always start on a new line.
+ They will also take space for an entire row or width.
+ List of block elements are <div>, <p>.
+
+Inline Elements: Inline elements don't start on a new line, 
+they appear on the same line as the content and tags beside them.
+ Some examples of inline elements are <a>, <span> , <strong>, and <img> tags. 
+
+Inline Block Elements: Inline-block elements are similar
+ to inline elements, except they can have padding and margins
+ added on all four sides
+
+
+
+
+
+
+
+Explain CSS position property?
+Absolute
+
+To place an element exactly where you want to place it. 
+absolute position is actually set relative to the element's parent. 
+if no parent is available then the relative place to the page itself 
+(it will default all the way back up to the element).
+
+Relative
+
+"Relative to itself". Setting position: relative;
+ on an element and no other positioning attributes, 
+it will no effect on its positioning. 
+It allows the use of z-index on the element and it limits 
+the scope of absolutely positioned child elements. 
+Any child element will be absolutely positioned within that block. 
+
+Fixed
+
+The element is positioned relative to the 
+viewport or the browser window itself. 
+viewport doesn't change if you scroll and hence the fixed 
+element will stay right in the same position. 
+
+Static
+
+Static default for every single page element.
+ The only reason you would ever set an element to position:
+ static is to forcefully-remove some positioning that got
+ applied to an element outside of your control.
+
+Sticky
+
+Sticky positioning is a hybrid of relative and fixed positioning.
+ The element is treated as relative positioned until it crosses a 
+specified threshold, at which point it is treated as fixed positioned.
+
+
+
+
+
+ Different Box Sizing Property?
+The box-sizing CSS property sets how the total width and height of an element are calculated.
+
+Content-box: The default width and height values apply to the element's content only. The padding and border are added to the outside of the box.
+
+Padding-box: Width and height values apply to the element's content and its padding. The border is added to the outside of the box. Currently, only Firefox supports the padding-box value.
+
+Border-box: Width and height values apply to the content, padding, and border.
+
+
+
+
+
+What does * { box-sizing: border-box; } do? What are its advantages?
+It makes every element in the document
+ include the padding and border in the element’s inner
+ dimension for the height and width computation.  
+In box-sizing: border-box, The height of an element 
+is now calculated by the content's height +
+ vertical padding + vertical border width.
+
+The width of an element is now calculated by the content's 
+width + horizontal padding + horizontal border width.
+
+
+
+universal selector
+
+
+
+universe selector is matches any element types
+ like instead of selecting elements of a particular 
+type so we use an asterisk where the all
+ elements irrespective of what name and what category
+ they have it all will be selected  
+
+A universal selector is a selector
+ that matches all elements rather
+ than selecting an element of a particular type.
+
+
+
+how can css be integrated into an html page?
+
+
+1-using sytle tags in the head section
+2- using inline-styling
+3-linking html page with css
+
+
+
+
+what is meant by rgb stream ?
+
+
+rgb represents color in css. the three streams are namely reg,greenb,blue 
+the itensity of color is represented using numbers 0 to 256
+
+It also has rgba. the last value is related to opacity. 
+We set the opacity value by giving a value of 0 to 1. 
+It gets more transparent as it gets closer to 0.
+
+
+
+
+class and id ?
+
+class is a way of using html elements for styling.
+they are not unique and have multiple elements. but 
+id is unique and it can be assigned to a single element
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html anlat+++++
+
+
+first, i defined my css document
+then i added this to use fontawasome library.
+
+I added the title of the tab.
+
+and I opened 2 main tabs inside the body, one is the header and the other is the section
+I also added 2 divs in the header. one for the brand and the other for the navigation bars.
+I also defined ul list in the navigation bar and created a menu with the a element.
+
+There are 3 divs inside the section.
+I have defined id. I added image and social links to the first container.
+In the about part, there are images and paragraphs.
+
+In the last div, I defined a table.
+I added these divs to show the display feature.
+
+
+I made it to merge 2 different cells
+
+
+
+css anlat +++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+
+
+
+
+
